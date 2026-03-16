@@ -35,3 +35,8 @@ header {
     align-items: center;
     padding: 20px;
 }
+
+.logo{
+    display:block;
+    margin-bottom:30px;
+}
