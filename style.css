@@ -4,11 +4,96 @@
     padding: 0;
 }
 
+@keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color:black;
-    color:white;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::before {
+    background-image:
+        radial-gradient(1px 1px at 10% 20%, white, transparent),
+        radial-gradient(1px 1px at 30% 75%, white, transparent),
+        radial-gradient(1px 1px at 50% 10%, white, transparent),
+        radial-gradient(1px 1px at 70% 55%, white, transparent),
+        radial-gradient(1px 1px at 85% 30%, white, transparent),
+        radial-gradient(1px 1px at 20% 50%, white, transparent),
+        radial-gradient(1px 1px at 60% 85%, white, transparent),
+        radial-gradient(1px 1px at 40% 40%, white, transparent),
+        radial-gradient(1px 1px at 90% 70%, white, transparent),
+        radial-gradient(1px 1px at 5%  90%, white, transparent),
+        radial-gradient(1px 1px at 17% 33%, white, transparent),
+        radial-gradient(1px 1px at 38% 58%, white, transparent),
+        radial-gradient(1px 1px at 62% 22%, white, transparent),
+        radial-gradient(1px 1px at 78% 88%, white, transparent),
+        radial-gradient(1px 1px at 92% 42%, white, transparent),
+        radial-gradient(1px 1px at 3%  67%, white, transparent),
+        radial-gradient(1px 1px at 48% 78%, white, transparent),
+        radial-gradient(1px 1px at 23% 12%, white, transparent),
+        radial-gradient(1px 1px at 73% 37%, white, transparent),
+        radial-gradient(1px 1px at 57% 52%, white, transparent),
+        radial-gradient(1px 1px at 33% 92%, white, transparent),
+        radial-gradient(1px 1px at 88% 8%,  white, transparent),
+        radial-gradient(1px 1px at 12% 72%, white, transparent),
+        radial-gradient(1px 1px at 67% 47%, white, transparent),
+        radial-gradient(1px 1px at 44% 17%, white, transparent),
+        radial-gradient(1px 1px at 96% 62%, white, transparent),
+        radial-gradient(1px 1px at 28% 28%, white, transparent),
+        radial-gradient(1px 1px at 82% 18%, white, transparent),
+        radial-gradient(1px 1px at 53% 97%, white, transparent),
+        radial-gradient(1px 1px at 7%  45%, white, transparent);
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+body::after {
+    background-image:
+        radial-gradient(1px 1px at 15% 60%, white, transparent),
+        radial-gradient(1px 1px at 35% 25%, white, transparent),
+        radial-gradient(1px 1px at 55% 45%, white, transparent),
+        radial-gradient(1px 1px at 75% 80%, white, transparent),
+        radial-gradient(1px 1px at 95% 15%, white, transparent),
+        radial-gradient(1px 1px at 25% 95%, white, transparent),
+        radial-gradient(1px 1px at 65% 65%, white, transparent),
+        radial-gradient(1px 1px at 45% 5%,  white, transparent),
+        radial-gradient(1px 1px at 80% 45%, white, transparent),
+        radial-gradient(1px 1px at 8%  35%, white, transparent),
+        radial-gradient(1px 1px at 42% 82%, white, transparent),
+        radial-gradient(1px 1px at 19% 48%, white, transparent),
+        radial-gradient(1px 1px at 71% 13%, white, transparent),
+        radial-gradient(1px 1px at 58% 72%, white, transparent),
+        radial-gradient(1px 1px at 89% 57%, white, transparent),
+        radial-gradient(1px 1px at 2%  22%, white, transparent),
+        radial-gradient(1px 1px at 36% 38%, white, transparent),
+        radial-gradient(1px 1px at 91% 93%, white, transparent),
+        radial-gradient(1px 1px at 14% 84%, white, transparent),
+        radial-gradient(1px 1px at 63% 31%, white, transparent),
+        radial-gradient(1px 1px at 77% 67%, white, transparent),
+        radial-gradient(1px 1px at 49% 53%, white, transparent),
+        radial-gradient(1px 1px at 22% 7%,  white, transparent),
+        radial-gradient(1px 1px at 84% 28%, white, transparent),
+        radial-gradient(1px 1px at 31% 63%, white, transparent),
+        radial-gradient(1px 1px at 97% 44%, white, transparent),
+        radial-gradient(1px 1px at 6%  78%, white, transparent),
+        radial-gradient(1px 1px at 69% 99%, white, transparent),
+        radial-gradient(1px 1px at 52% 18%, white, transparent),
+        radial-gradient(1px 1px at 41% 41%, white, transparent);
+    animation: twinkle 4.5s ease-in-out infinite reverse;
 }
 
 img, picture, video, canvas, svg {
@@ -34,9 +119,16 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .logo{
     display:block;
     margin-bottom:30px;
+}
+
+.split{
+    position: relative;
+    z-index: 1;
 }
