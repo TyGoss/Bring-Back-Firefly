@@ -33,7 +33,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: #7D3707;
+    color: #C4622A;
     font-family: 'Julius Sans One', sans-serif;
 }
 
@@ -80,7 +80,7 @@ header nav a{
     font-family: Julius Sans One, sans-serif;
     font-size:18px;
     text-decoration: none;
-    color:#7D3707;
+    color:#C4622A;
     font-weight:bold;
 }
 
@@ -128,7 +128,7 @@ header nav a{
     font-size: 14px;
     text-decoration: none;
     color: white;
-    border: 1px solid #7d360769;
+    border: 1px solid #c4622a69;
     padding: 8px 18px;
     font-weight:bold;
     border-radius: 3px;
@@ -136,8 +136,8 @@ header nav a{
 }
 
 .platform-btn:hover {
-    border-color: #7D3707;
-    color: #7D3707;
+    border-color: #C4622A;
+    color: #C4622A;
 }
 
 .faq {
@@ -152,12 +152,12 @@ header nav a{
 }
 
 .faq details {
-    border-bottom: 1px solid #7d360769;
+    border-bottom: 1px solid #c4622a69;
     padding:15px;
 }
 
 .faq details:first-of-type {
-    border-top: 1px solid #7d360769;
+    border-top: 1px solid #c4622a69;
 }
 
 .faq summary {
@@ -178,7 +178,7 @@ header nav a{
 
 .faq summary::after {
     content: '+';
-    color: #7D3707;
+    color: #C4622A;
     font-size: 22px;
     font-family: sans-serif;
     transition: transform 0.2s ease;
@@ -208,7 +208,7 @@ header nav a{
 }
 
 .faq details a {
-    color: #7D3707;
+    color: #C4622A;
 }
 
 .faq details img{
@@ -219,7 +219,7 @@ footer {
     position: relative;
     z-index: 1;
     padding: 30px;
-    border-top: 1px solid #7d360769;
+    border-top: 1px solid #c4622a69;
     margin-top: 30px;
 }
 
@@ -297,7 +297,7 @@ blockquote.instagram-media{
         justify-content: flex-start;
         align-items: center;
         max-width: unset;
-        max-width: 1280px;
+        max-width: 1600px;
         min-height: 60vh;
     }
 
@@ -319,7 +319,7 @@ blockquote.instagram-media{
     }
 
     .split, .faq{
-        max-width:1280px;
+        max-width:1600px;
         margin-left:auto;
         margin-right:auto;
     }
