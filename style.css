@@ -133,6 +133,7 @@ header nav a{
     font-weight:bold;
     border-radius: 3px;
     transition: border-color 0.2s, color 0.2s;
+    background:black;
 }
 
 .platform-btn:hover {
@@ -229,6 +230,27 @@ footer p {
     line-height: 1.6;
     max-width:800px;
     margin: 0 auto 10px;
+}
+
+.reddit-btn {
+    display: inline-block;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #c4622a69;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: border-color 0.2s, color 0.2s;
+    width:100%;
+    background:black;
+    text-align: center;
+    margin-bottom:30px;
+}
+
+.reddit-btn:hover {
+    border-color: #C4622A;
+    color: #C4622A;
 }
 
 blockquote.instagram-media{
