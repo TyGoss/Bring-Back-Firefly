@@ -256,6 +256,7 @@ footer p {
 blockquote.instagram-media{
     min-width:unset !important;
     max-width:unset !important;
+    margin-bottom:30px;
 }
 
 @media(min-width:768px){
